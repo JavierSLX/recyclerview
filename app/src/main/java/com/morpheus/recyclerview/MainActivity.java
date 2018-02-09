@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity
 
         recyclerView = (RecyclerView)findViewById(R.id.recyclerview);
 
+        RecyclerAdapter adapter = new RecyclerAdapter(this);
+        recyclerView.setAdapter(adapter);
+
         //Todos los items de la lista tienen el mismo tamaño
         recyclerView.setHasFixedSize(true);
 
